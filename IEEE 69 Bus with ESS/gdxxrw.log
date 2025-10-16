@@ -1,0 +1,22 @@
+GDXXRW           24.1.2 r40979 Released Jun 16, 2013 VS8 x86/MS Windows       
+Excel version 16.0
+Input file : C:\Users\Utilizador\Desktop\Di\Simulations\69B_Simulations\69Bus_Modified\SimData.xlsx
+Output file: C:\Users\Utilizador\Desktop\Di\Simulations\69B_Simulations\69Bus_Modified\SimData.gdx
+Type Symbol       Dim     Sheet                Data          RowHeader     ColHeader     
+Loading sheet Transmission
+Reading data from Excel: Width = 40  Height = 74
+Par  NodeData       2     Transmission         K2:R70        J2:J70        K1:R1         
+Par  LineData       2     Transmission         B2:H74        A2:A74        B1:H1         
+Loading sheet Generation
+Reading data from Excel: Width = 27  Height = 39
+Par  DGData         2     Generation           B2:L7         A2:A7         B1:L1         
+Loading sheet Reactive
+Reading data from Excel: Width = 25  Height = 76
+Par  ReactivePower   2     Reactive             B2:Y70        A2:A70        B1:Y1         
+Loading sheet Active
+Reading data from Excel: Width = 25  Height = 76
+Par  ActivePower    2     Active               B2:Y70        A2:A70        B1:Y1         
+Par  Renewabels     2     Generation           B16:E39       A16:A39       B15:E15       
+Par  DR_Priority_Factor   2     Generation           L10:L13       K10:K13       L9:L9         
+Par  StorageData    2     Generation           B10:I12       A10:A12       B9:I9         
+Total time = 1563 Ms

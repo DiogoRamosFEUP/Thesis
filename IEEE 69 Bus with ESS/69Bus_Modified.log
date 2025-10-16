@@ -1,0 +1,297 @@
+
+--- Job 69Bus_Modified.gms Start 10/14/09 10:36:28 24.1.2 r40979 WEX-WEI x86_64/MS Windows
+GAMS 24.1.2   Copyright (C) 1987-2013 GAMS Development. All rights reserved
+Licensee: EWEPA 2015 Eval License                        S150430/0001AO-GEN
+          The 14th European Workshop on Efficiency and Productivity DC11746
+          License for teaching and research at degree granting institutions
+--- Starting compilation
+--- 69Bus_Modified.gms(30) 3 Mb
+--- call gdxxrw SimData.xlsx log=gdxxrw.log trace=3 squeeze='N' @SimData.txt
+--- 69Bus_Modified.gms(31) 3 Mb
+--- GDXin=C:\Users\Utilizador\Desktop\Di\Simulations\69B_Simulations\69Bus_Modified\SimData.gdx
+--- 69Bus_Modified.gms(174) 3 Mb
+--- .Equations.gms(72) 3 Mb
+--- 69Bus_Modified.gms(187) 3 Mb
+--- .IslandSearch.gms(90) 3 Mb
+--- 69Bus_Modified.gms(225) 3 Mb
+--- .Store.gms(14) 3 Mb
+--- 69Bus_Modified.gms(225) 3 Mb
+--- Starting execution: elapsed 0:00:01.681
+--- 69Bus_Modified.gms(347) 4 Mb
+--- Generating MIQCP model Main_L
+--- 69Bus_Modified.gms(351) 17 Mb
+---   48,652 rows  27,122 columns  131,443 non-zeroes
+---   50,064 nl-code  7,296 nl-non-zeroes
+---   6,845 discrete-columns
+--- 69Bus_Modified.gms(351) 14 Mb
+--- Executing CPLEX: elapsed 0:00:01.932
+
+IBM ILOG CPLEX   24.1.2 r40979 Released Jun 16, 2013 WEI x86_64/MS Windows    
+--- GAMS/Cplex licensed for continuous and discrete problems.
+Cplex 12.5.1.0
+
+Reading data...
+Starting Cplex...
+Tried aggregator 3 times.
+MIQCP Presolve eliminated 26586 rows and 10369 columns.
+MIQCP Presolve modified 1410 coefficients.
+Aggregator did 13433 substitutions.
+Reduced MIQCP has 22088 rows, 20096 columns, and 60140 nonzeros.
+Reduced MIQCP has 1636 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 3288 quadratic constraints.
+Presolve time = 0.22 sec. (125.65 ticks)
+Probing fixed 0 vars, tightened 34117 bounds.
+Probing changed sense of 96 constraints.
+Probing time = 0.64 sec. (293.71 ticks)
+Clique table members: 2256.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+
+Iteration log . . .
+Iteration:     1   Dual objective     =         24355.200000
+Perturbation started.
+Iteration:   101   Dual objective     =         24355.200000
+Iteration:   625   Dual objective     =         24355.181337
+Iteration:  1154   Dual objective     =         24355.170372
+Iteration:  1699   Dual objective     =         24355.154990
+Iteration:  2230   Dual objective     =         24355.111409
+Iteration:  2775   Dual objective     =         24355.042505
+Iteration:  3291   Dual objective     =         24354.966113
+Iteration:  3764   Dual objective     =         24354.934081
+Iteration:  4237   Dual objective     =         24354.920751
+Iteration:  4605   Dual objective     =         24354.914958
+Iteration:  4944   Dual objective     =         24354.894527
+Iteration:  5220   Dual objective     =         24354.894336
+Iteration:  5449   Dual objective     =         24354.894194
+Iteration:  5670   Dual objective     =         24354.894042
+Iteration:  5845   Dual objective     =         24354.893907
+Iteration:  6030   Dual objective     =         24354.892680
+Iteration:  6393   Dual objective     =         24349.387693
+Iteration:  6803   Dual objective     =         24341.697788
+Iteration:  7267   Dual objective     =         24315.911313
+Iteration:  7566   Dual objective     =         24303.520053
+Iteration:  7893   Dual objective     =         24300.366246
+Iteration:  8163   Dual objective     =         24300.132387
+Iteration:  8444   Dual objective     =         24297.880247
+Iteration:  8653   Dual objective     =         24296.995987
+Iteration:  8887   Dual objective     =         24296.715971
+Iteration:  9058   Dual objective     =         24296.155947
+Iteration:  9335   Dual objective     =         24292.242546
+Iteration:  9628   Dual objective     =         24288.067464
+Iteration:  9943   Dual objective     =         24175.071021
+Iteration: 10280   Dual objective     =         24167.699499
+Iteration: 10575   Dual objective     =         24164.102541
+Iteration: 10827   Dual objective     =         24162.699362
+Iteration: 10970   Dual objective     =         24162.699336
+Iteration: 11251   Dual objective     =         24162.518779
+Iteration: 11686   Dual objective     =         24162.251350
+Iteration: 12101   Dual objective     =         24162.166258
+Removing perturbation.
+Root relaxation solution time = 0.41 sec. (569.76 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    24162.4916     0                  24355.2000    12358         
+      0     0    24151.6599    65                  Cone: 2685    15436         
+      0     0    24149.9349    64                  Cone: 5005    18305         
+      0     0    24147.9928    63                  Cone: 6872    20439         
+      0     0    24147.3413    68                  Cone: 8848    22926         
+      0     0    24146.9959    68                 Cone: 10599    24490         
+      0     0    24146.8264    68                 Cone: 12258    25952         
+      0     0    24146.7470    68                 Cone: 13789    27232         
+      0     0    24146.7218    68                 Cone: 15138    28196         
+      0     0    24146.7066    68                 Cone: 16031    29493         
+      0     0    24146.6982    68                 Cone: 16734    30491         
+      0     0    24146.6929    73                 Cone: 17283    31383         
+      0     0    24146.6915    73                 Cone: 17646    31812         
+      0     0    24146.6905    73                 Cone: 17795    32025         
+      0     0    24146.6901    73                 Cone: 17896    32187         
+      0     0    24146.6901    73                 Cone: 18026    32255         
+      0     0    24146.6901    73                 Cone: 18048    32275         
+      0     0    24146.6901    73                 Cone: 18056    32284         
+      0     0    24146.6901    73                 Cone: 18060    32288         
+      0     0    24146.6901    73                 Cone: 18064    32292         
+      0     0    24146.6901    73                 Cone: 18066    32296         
+      0     0    24146.6901    73                 Cone: 18068    32298         
+      0     0    24146.6901    73                 Cone: 18069    32299         
+      0     0    24146.6901    73                 Cone: 18070    32300         
+      0     0    24146.6901    73                 Cone: 18071    32301         
+      0     0    24146.6901    73                 Cone: 18072    32302         
+      0     0    24146.6901    73                 Cone: 18073    32303         
+      0     0    24146.6901    73                  24146.6901    32303         
+      0     0    24146.6901    73                 MIRcuts: 44    32415         
+      0     2    24146.6901    73                  24145.8588    32415         
+Elapsed time = 26.42 sec. (20126.90 ticks, tree = 0.00 MB, solutions = 0)
+      1     3    24144.3459    73                  24143.9265    32672         
+      2     4    24142.4206    72                  24140.7066    33304         
+      3     5    24140.2028    72                  24140.1423    33850         
+      5     7    24130.9245    73                  24134.8457    34262         
+      6     8    24118.6275    75                  24134.8457    35559         
+      8    10    24093.9495    74                  24134.8457    37906         
+     10    12    24120.5586    69                  24134.8457    38793         
+     12    14    24099.2228    71                  24134.8457    39345         
+     13    15    24092.7815    69                  24134.8457    39612         
+     31    33    24092.7690    11                  24134.8457    39896         
+Elapsed time = 33.41 sec. (26166.88 ticks, tree = 1.13 MB, solutions = 0)
+     37    39    24092.7551     7                  24134.8457    40405         
+     41    43    24092.7513     7                  24134.8457    40754         
+     51    53    24092.7478     7                  24134.8457    41257         
+     72    74    24092.7464     3                  24134.8457    41535         
+     89    91    24092.7451     3                  24134.8457    41571         
+    102   104    24092.7441     3                  24134.8457    41991         
+    117   119    24092.7424     7                  24134.8457    42023         
+    124   126    24092.7418     3                  24134.8457    42274         
+    131   133    24092.7414     7                  24134.8457    43103         
+    136   138    24092.5380     7                  24134.8457    43581         
+Elapsed time = 44.20 sec. (36864.18 ticks, tree = 2.14 MB, solutions = 0)
+    144   146    24092.7402     7                  24134.8457    43794         
+    154   156    24092.7399     3                  24134.8457    44525         
+    171   173    24092.7390     3                  24134.8457    44549         
+    185   187    24092.7385     3                  24134.8457    44569         
+    195   197    24092.4013     7                  24134.8457    44936         
+    209   211    24092.7372     3                  24134.8457    44984         
+    216   218    24092.7364     7                  24134.8457    45470         
+    222   224    24092.7360     3                  24134.8457    45901         
+    245   247    24092.7345     3                  24134.8457    45943         
+    257   259    24092.7338     7                  24134.8457    45964         
+Elapsed time = 55.00 sec. (46948.22 ticks, tree = 3.32 MB, solutions = 0)
+    263   265    24091.6875     3                  24134.8457    47941         
+    277   279    24091.2683     3                  24134.8457    49259         
+    281   283    24092.7241     3                  24134.8457    49268         
+                                                    Cone: 571                  
+    286   288    24090.5265     3                  24134.8457    50796         
+    292   294    24090.4332     9                  24134.8457    52709         
+    300   302    24092.7235     3                  24134.8457    52735         
+    313   315    24092.7223     3                  24134.8457    52776         
+    322   324    24092.7217     3                  24134.8457    52788         
+    333   335    24092.7205     6                  24134.8457    52806         
+    341   343    24092.6679     2                  24134.8457    53319         
+Elapsed time = 67.36 sec. (58580.66 ticks, tree = 4.98 MB, solutions = 0)
+    351   353    24092.6981     2                  24134.8457    53494         
+    356   358    24092.7045     6                  24134.8457    53510         
+    362   364    24092.7030     2                  24134.8457    53679         
+    376   378    24092.7002     6                  24134.8457    53716         
+    380   382    24092.6998     6                  24134.8457    53973         
+    387   389    24092.3856     2                  24134.8457    54424         
+    392   394    24092.6973     2                  24134.8457    54638         
+    397   399    24092.6962     2                  24134.8457    54911         
+    400   402    24092.6908     2                  24134.8457    54914         
+                                                    Cone: 975                  
+    413   415    24092.6901     2                  24134.8457    54938         
+Elapsed time = 80.38 sec. (69787.67 ticks, tree = 7.39 MB, solutions = 0)
+    422   424    24092.6898     2                  24134.8457    55199         
+    434   436    24092.6893     2                  24134.8457    55227         
+    440   442    24092.6890     6                  24134.8457    55236         
+    444   446    24092.6888     2                  24134.8457    55614         
+    448   450    24092.0700     2                  24134.8457    55926         
+    455   457    24092.6880     2                  24134.8457    55947         
+    456   458    24091.9872     2                  24134.8457    60773         
+    462   464    24092.6879     2                  24134.8457    60779         
+    466   468    24092.4831     2                  24134.8457    62389         
+    467   469    24091.9497     3                  24134.8457    66179         
+Elapsed time = 95.16 sec. (81671.60 ticks, tree = 13.14 MB, solutions = 0)
+    476   478    24092.4652     2                  24134.8457    70043         
+    477   479    24091.8892     2                  24134.8457    74787         
+    480   482    24092.6873     2                  24134.8457    74790         
+                                                    Cone: 340                  
+    490   492    24092.6871     2                  24134.8457    74806         
+    493   495    24092.4510     2                  24134.8457    80062         
+    497   499    24092.4392     2                  24134.8457    82304         
+    498   500    24091.8107     2                  24134.8457    89521         
+    501   503    24092.4358     2                  24134.8457    93417         
+    502   504    24091.8038     2                  24134.8457    95895         
+    509   511    24092.6867     2                  24134.8457    95914         
+Elapsed time = 119.66 sec. (103344.42 ticks, tree = 17.08 MB, solutions = 0)
+    515   517    24092.4211     2                  24134.8457    97882         
+*   520+  405                        24092.6800    24134.8457    98457    0.18%
+Found incumbent of value 24092.680000 after 125.08 sec. (109467.46 ticks)
+    520   407    24092.6864     2    24092.6800    24134.8457    98457    0.18%
+                                                     Cone: 37                  
+    533   416    24092.6847     2    24092.6800    24134.8457    98491    0.18%
+    540   416        cutoff          24092.6800    24134.8457    98908    0.18%
+    542   418    24130.4448    70    24092.6800    24133.9936   100955    0.17%
+                                                      Cone: 2                  
+    546   421    24114.6211    72    24092.6800    24133.9936   103884    0.17%
+    552   419    24093.8460    62    24092.6800    24125.2193   105337    0.14%
+    572   439    24093.8112     3    24092.6800    24125.2193   105758    0.14%
+    651   518    24093.7975     6    24092.6800    24125.2193   106134    0.14%
+    715   582    24093.7868     2    24092.6800    24125.2193   106473    0.14%
+Elapsed time = 134.25 sec. (117786.69 ticks, tree = 91.33 MB, solutions = 1)
+    802   669    24094.2267    70    24092.6800    24119.5481   107240    0.11%
+    822   689    24094.1641    11    24092.6800    24119.5481   108232    0.11%
+    829   696    24094.1622     1    24092.6800    24119.5481   109162    0.11%
+    852   719    24094.1412     5    24092.6800    24119.5481   109446    0.11%
+    862   729    24094.1215     4    24092.6800    24119.5481   110100    0.11%
+    878   745    24094.1185     1    24092.6800    24119.5481   110576    0.11%
+    892   759    24094.1158     1    24092.6800    24119.5481   111098    0.11%
+    912   779    24094.1097     1    24092.6800    24119.5481   111545    0.11%
+    923   790    24094.1063     5    24092.6800    24119.5481   111837    0.11%
+    929   796    24094.1037     5    24092.6800    24119.5481   111874    0.11%
+Elapsed time = 144.33 sec. (127795.36 ticks, tree = 187.61 MB, solutions = 1)
+Nodefile size = 16.24 MB (12.31 MB after compression)
+    953   820    24093.8013     1    24092.6800    24119.5481   112571    0.11%
+   1003   866        cutoff          24092.6800    24117.8827   112940    0.10%
+   1029   892    24093.0347     2    24092.6800    24117.6303   113961    0.10%
+   1053   916    24093.0237     2    24092.6800    24117.6303   114698    0.10%
+   1094   957    24093.0111     2    24092.6800    24117.6303   114773    0.10%
+   1123   986    24092.9801     2    24092.6800    24117.6303   115433    0.10%
+   1160  1023    24092.9768     2    24092.6800    24117.6303   115501    0.10%
+                                                    Cone: 712                  
+   1263  1126    24092.9714     2    24092.6800    24117.6303   115697    0.10%
+   1300  1161    24092.9600     2    24092.6800    24117.6303   118397    0.10%
+                                                    Cone: 653                  
+*  1302   751      integral     0    24092.9600    24117.6303   128311    0.10%
+                                                   Cone: 1702                  
+Elapsed time = 184.48 sec. (162907.46 ticks, tree = 335.08 MB, solutions = 2)
+Nodefile size = 208.57 MB (159.52 MB after compression)
+Found incumbent of value 24092.960000 after 184.48 sec. (162907.46 ticks)
+   1314   753    24103.8573    66    24092.9600    24109.8337   135814    0.07%
+                                                      Cuts: 3                  
+   1378   809    24093.4379     3    24092.9600    24102.8313   138692    0.04%
+   1660  1091    24093.3984     4    24092.9600    24102.8313   139776    0.04%
+   1703  1132    24093.3950     4    24092.9600    24102.8313   141097    0.04%
+*  1753   920      integral     0    24093.3800    24102.8313   144054    0.04%
+                                                   Cone: 1316                  
+Found incumbent of value 24093.380000 after 214.97 sec. (187599.68 ticks)
+
+Implied bound cuts applied:  2
+Mixed integer rounding cuts applied:  10
+
+Root node processing (before b&c):
+  Real time             =   26.11 sec. (19923.58 ticks)
+Sequential b&c:
+  Real time             =  190.80 sec. (168896.79 ticks)
+                          ------------
+Total (root+branch&cut) =  216.91 sec. (188820.37 ticks)
+MIQCP status(102): integer optimal, tolerance
+Cplex Time: 216.91sec (det. 188820.37 ticks)
+Returning a primal only solution to GAMS (marginals all set to NA).
+
+Solution satisfies tolerances.
+
+MIP Solution:        24093.380000    (145093 iterations, 1758 nodes)
+Best possible:       24094.226723
+Absolute gap:            0.846723
+Relative gap:            0.000035
+
+--- Restarting execution
+--- 69Bus_Modified.gms(351) 4 Mb
+--- Reading solution for model Main_L
+--- 69Bus_Modified.gms(351) 7 Mb
+--- Executing after solve: elapsed 0:03:39.267
+--- 69Bus_Modified.gms(401) 9 Mb
+
+GDXXRW           24.1.2 r40979 Released Jun 16, 2013 VS8 x86/MS Windows       
+Input file : C:\Users\Utilizador\Desktop\Di\Simulations\69B_Simulations\69Bus_Modified\Results_Best_Scenario.gdx
+Output file: C:\Users\Utilizador\Desktop\Di\Simulations\69B_Simulations\69Bus_Modified\Results_Best_ESS.xlsx
+Adding new sheet: DR_Status
+Adding new sheet: DR_Used
+Adding new sheet: DR_Gamma
+Adding new sheet: DR_Total
+Adding new sheet: RestoredLoads
+Adding new sheet: Storage
+Total time = 2453 Ms
+*** Status: Normal completion
+--- Job 69Bus_Modified.gms Stop 10/14/09 10:40:10 elapsed 0:03:41.799
