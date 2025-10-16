@@ -1,0 +1,247 @@
+
+--- Job 33Bus_EREDES.gms Start 10/11/09 23:50:03 24.1.2 r40979 WEX-WEI x86_64/MS Windows
+GAMS 24.1.2   Copyright (C) 1987-2013 GAMS Development. All rights reserved
+Licensee: EWEPA 2015 Eval License                        S150430/0001AO-GEN
+          The 14th European Workshop on Efficiency and Productivity DC11746
+          License for teaching and research at degree granting institutions
+--- Starting compilation
+--- 33Bus_EREDES.gms(30) 3 Mb
+--- call gdxxrw SimData.xlsx log=gdxxrw.log trace=3 squeeze='N' @SimData.txt
+--- 33Bus_EREDES.gms(31) 3 Mb
+--- GDXin=C:\Users\Utilizador\Desktop\Diss\Simulations\33B_Simulations\33Bus_EREDES\SimData.gdx
+--- 33Bus_EREDES.gms(135) 3 Mb
+--- .Equations.gms(63) 3 Mb
+--- 33Bus_EREDES.gms(161) 3 Mb
+--- .IslandSearch.gms(90) 3 Mb
+--- 33Bus_EREDES.gms(227) 3 Mb
+--- .Store.gms(19) 3 Mb
+--- 33Bus_EREDES.gms(227) 3 Mb
+--- Starting execution: elapsed 0:00:01.594
+--- 33Bus_EREDES.gms(216) 4 Mb
+--- Generating MIQCP model Main_L
+--- 33Bus_EREDES.gms(316) 11 Mb
+--- LOOPS sc = sc5
+---   24,985 rows  13,886 columns  68,377 non-zeroes
+---   25,704 nl-code  3,792 nl-non-zeroes
+---   3,629 discrete-columns
+--- 33Bus_EREDES.gms(316) 9 Mb
+--- Executing CPLEX: elapsed 0:00:01.669
+
+IBM ILOG CPLEX   24.1.2 r40979 Released Jun 16, 2013 WEI x86_64/MS Windows    
+--- GAMS/Cplex licensed for continuous and discrete problems.
+Cplex 12.5.1.0
+
+Reading data...
+Starting Cplex...
+Tried aggregator 6 times.
+MIQCP Presolve eliminated 13391 rows and 5505 columns.
+MIQCP Presolve modified 864 coefficients.
+Aggregator did 7032 substitutions.
+Reduced MIQCP has 11065 rows, 9533 columns, and 30700 nonzeros.
+Reduced MIQCP has 893 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 1488 quadratic constraints.
+Presolve time = 0.11 sec. (68.66 ticks)
+Probing fixed 0 vars, tightened 3571 bounds.
+Probing changed sense of 72 constraints.
+Probing time = 0.05 sec. (18.26 ticks)
+Cover probing fixed 0 vars, tightened 355 bounds.
+Clique table members: 793.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+
+Iteration log . . .
+Iteration:     1   Dual objective     =         15405.600000
+Perturbation started.
+Iteration:   101   Dual objective     =         15405.600000
+Iteration:   475   Dual objective     =         15405.598026
+Iteration:   843   Dual objective     =         15405.596012
+Iteration:  1200   Dual objective     =         15405.593233
+Iteration:  1525   Dual objective     =         15405.591924
+Iteration:  1861   Dual objective     =         15405.590655
+Iteration:  2301   Dual objective     =         15405.589497
+Iteration:  2656   Dual objective     =         15311.883776
+Iteration:  3020   Dual objective     =         15203.180640
+Iteration:  3396   Dual objective     =         15197.041164
+Iteration:  3654   Dual objective     =         15197.037845
+Iteration:  3902   Dual objective     =         15197.036869
+Iteration:  4136   Dual objective     =         15148.907085
+Iteration:  4341   Dual objective     =         15119.384542
+Iteration:  4640   Dual objective     =         14948.757254
+Iteration:  4871   Dual objective     =         14924.700236
+Iteration:  5137   Dual objective     =         14924.598698
+Iteration:  5391   Dual objective     =         14924.598684
+Iteration:  5583   Dual objective     =         14924.598660
+Iteration:  5764   Dual objective     =         14924.598643
+Iteration:  5979   Dual objective     =         14924.598619
+Removing perturbation.
+Root relaxation solution time = 0.17 sec. (180.79 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    14924.1738     0                  15405.6000     6085         
+      0     0    14924.1616    36                  Cone: 1248     6927         
+      0     0    14917.4579    41                  Cone: 2532     8736         
+      0     0    14911.9581    93                  Cone: 3842    10153         
+      0     0    14909.3117   108                  Cone: 5114    11305         
+      0     0    14908.9598   107                  Cone: 6356    12341         
+      0     0    14908.8561    97                  Cone: 7454    13037         
+      0     0    14908.8237    97                  Cone: 8349    13653         
+      0     0    14908.8189    97                  Cone: 8731    13922         
+      0     0    14908.8188    97                  Cone: 8797    13982         
+      0     0    14908.8188    97                  Cone: 8825    14007         
+      0     0    14908.8188    97                  Cone: 8853    14032         
+      0     0    14908.8188    97                  14908.8188    14032         
+      0     0    14908.7248    95                   Covers: 1    14042         
+*     0+    0                        14620.7100    14908.7248    14042    1.97%
+Found incumbent of value 14620.710000 after 4.41 sec. (4272.35 ticks)
+*     0+    0                        14630.6000    14908.7248    14042    1.90%
+Found incumbent of value 14630.600000 after 5.64 sec. (5765.67 ticks)
+      0     2    14908.7248    95    14630.6000    14889.7176    14042    1.77%
+Elapsed time = 6.58 sec. (6926.78 ticks, tree = 0.00 MB, solutions = 2)
+      5     7    14830.4690    36    14630.6000    14864.4419    15097    1.60%
+     16    16    infeasible          14630.6000    14864.4419    15324    1.60%
+     25    21    14667.5540    48    14630.6000    14864.4419    15518    1.60%
+     28    21    14856.7940   100    14630.6000    14841.8579    15585    1.44%
+                                                    Covers: 1                  
+     30    22    14832.3297    40    14630.6000    14841.8579    16854    1.44%
+     58    42    14795.8078    40    14630.6000    14820.2917    17336    1.30%
+     80    58    14798.7995    40    14630.6000    14814.4886    17819    1.26%
+     99    68    14652.5901    60    14630.6000    14814.4886    18023    1.26%
+    110    74    14650.5497    43    14630.6000    14814.4886    18092    1.26%
+    166   114    14650.3409    29    14630.6000    14814.4886    18215    1.26%
+Elapsed time = 9.52 sec. (10241.77 ticks, tree = 0.50 MB, solutions = 2)
+    221   133    14814.1337   104    14630.6000    14814.0213    18485    1.25%
+                                                    Covers: 1                  
+    331   215    14670.4501    28    14630.6000    14797.6109    20591    1.14%
+    423   295    14670.2907    26    14630.6000    14797.6109    20834    1.14%
+    473   341    14660.7910    20    14630.6000    14797.6109    21180    1.14%
+    550   414    14660.5078    15    14630.6000    14797.6109    21468    1.14%
+    611   473    14660.3056     9    14630.6000    14797.6109    21735    1.14%
+    670   526    14649.6817    10    14630.6000    14797.6109    21969    1.14%
+    722   577    14649.5794     4    14630.6000    14797.6109    22184    1.14%
+*   764   569      integral     0    14649.3800    14797.6109    22354    1.01%
+                                                    Cone: 879                  
+Found incumbent of value 14649.380000 after 18.00 sec. (19619.95 ticks)
+    764   569    14649.3800     0    14649.3800    14797.6109    22354    1.01%
+                                                   Cone: 1656                  
+    828   610    14684.9517    64    14649.3800    14780.8667    28187    0.90%
+                                                      Cuts: 3                  
+Elapsed time = 18.97 sec. (20594.25 ticks, tree = 2.79 MB, solutions = 3)
+   1068   839    14660.1279    18    14649.3800    14780.8667    28855    0.90%
+   1200   967    14649.8505     6    14649.3800    14780.8667    29369    0.90%
+                                                   Cone: 1092                  
+*  1226   868      integral     0    14649.7900    14780.8667    29441    0.89%
+Found incumbent of value 14649.790000 after 22.28 sec. (23874.19 ticks)
+   1226   868    14649.7900     0    14649.7900    14780.8667    29441    0.89%
+                                                    Cone: 697                  
+   1285   910    14711.6538    56    14649.7900    14776.8039    35382    0.87%
+                                                    Covers: 2                  
+   1571  1183    14680.1279    11    14649.7900    14776.8039    36427    0.87%
+*  1728   557      integral     0    14679.6100    14776.8039    37169    0.66%
+Found incumbent of value 14679.610000 after 26.97 sec. (27531.01 ticks)
+   1728   556    14679.6100     0    14679.6100    14776.8039    37169    0.66%
+                                                    Cone: 536                  
+   1776   576    14700.6693    44    14679.6100    14768.4036    46705    0.60%
+   1815   583    14745.7279    44    14679.6100    14760.5606    53863    0.55%
+   1871   604    14689.8136    44    14679.6100    14754.0432    61772    0.51%
+   1935   611    14731.5154    52    14679.6100    14749.0111    73742    0.47%
+Elapsed time = 31.25 sec. (31648.97 ticks, tree = 3.30 MB, solutions = 5)
+   1992   609    14742.0910    48    14679.6100    14742.0630    85002    0.43%
+   2035   604    14705.4805    60    14679.6100    14734.8168    91870    0.38%
+   2096   597    14709.7909    48    14679.6100    14728.4196   104602    0.33%
+   2240   609    14680.3290    25    14679.6100    14713.3203   112472    0.23%
+   2471   803    14707.0490    48    14679.6100    14711.5764   113978    0.22%
+   2651   925    14679.7480    11    14679.6100    14707.1060   116940    0.19%
+   2879  1101    14679.7422    11    14679.6100    14706.3043   119450    0.18%
+   3011  1080    14693.5703    48    14679.6100    14696.8722   124534    0.12%
+                                                    Covers: 1                  
+   3228  1195    14680.0022    12    14679.6100    14690.6857   128254    0.08%
+   3419  1355    14680.3039    21    14679.6100    14690.6854   129305    0.08%
+Elapsed time = 39.45 sec. (41239.03 ticks, tree = 7.16 MB, solutions = 5)
+*  3579  1487      integral     0    14679.6300    14690.6854   130082    0.08%
+Found incumbent of value 14679.630000 after 40.73 sec. (42832.73 ticks)
+   3579  1486    14679.6300     0    14679.6300    14690.6854   130082    0.08%
+                                                    Cone: 236                  
+   3790  1679    14679.8302    10    14679.6300    14690.6561   131299    0.08%
+                                                    Cone: 158                  
+   4042  1900    14679.8054    11    14679.6300    14690.5315   132717    0.07%
+   4218  2056    14680.0545     9    14679.6300    14690.5057   133807    0.07%
+*  4308  2121      integral     0    14679.6400    14690.5057   134346    0.07%
+Found incumbent of value 14679.640000 after 44.75 sec. (47429.75 ticks)
+   4308  2121    14679.6400     0    14679.6400    14690.5057   134346    0.07%
+                                                    Cone: 238                  
+   4537  2289    14679.9210    20    14679.6400    14690.4792   135694    0.07%
+   4658  2394    14680.0591    26    14679.6400    14690.4539   136657    0.07%
+                                                    Covers: 2                  
+   4853  2560    14680.2586    22    14679.6400    14690.4530   137942    0.07%
+   5090  2766    14680.1109    25    14679.6400    14690.4455   139249    0.07%
+   5314  2962    14679.9892    19    14679.6400    14690.4453   140798    0.07%
+Elapsed time = 48.97 sec. (52273.83 ticks, tree = 15.56 MB, solutions = 7)
+   5490  3120    14680.2108    21    14679.6400    14690.4450   141817    0.07%
+   5672  3273    14679.7072     3    14679.6400    14690.4450   142876    0.07%
+   5917  3481    14680.5268    43    14679.6400    14690.4450   144609    0.07%
+   6105  3651    14680.4596    35    14679.6400    14690.4401   145927    0.07%
+   6372  3893    14680.5025    30    14679.6400    14690.4291   147286    0.07%
+   6591  4104    14679.7584     1    14679.6400    14690.4291   148103    0.07%
+   6793  4290    14679.8449    14    14679.6400    14690.4275   149464    0.07%
+   7044  4523    14679.9525     8    14679.6400    14690.4266   150625    0.07%
+   7255  4700    14679.7664    18    14679.6400    14690.4253   151735    0.07%
+   7470  4877    14680.0614     8    14679.6400    14690.4248   152650    0.07%
+                                                    Covers: 2                  
+Elapsed time = 56.23 sec. (61839.12 ticks, tree = 25.65 MB, solutions = 7)
+   7640  5035    14690.0221    23    14679.6400    14690.4245   153508    0.07%
+   7868  5234    14690.1622    30    14679.6400    14690.4202   155097    0.07%
+   8069  5380    14680.3333    30    14679.6400    14690.4119   156220    0.07%
+   8320  5600    14680.1120    20    14679.6400    14690.4105   157440    0.07%
+   8539  5791    14680.2148    23    14679.6400    14690.4080   158332    0.07%
+                                                    Covers: 2                  
+   8689  5932    14679.8857     9    14679.6400    14690.4080   159068    0.07%
+   8845  6057    14680.2386    22    14679.6400    14690.4079   160149    0.07%
+   9065  6251    14680.2392    23    14679.6400    14690.4053   161334    0.07%
+Sending CtrlC signal
+
+Cover cuts applied:  14
+
+Root node processing (before b&c):
+  Real time             =    6.58 sec. (6919.52 ticks)
+Sequential b&c:
+  Real time             =   56.22 sec. (63547.45 ticks)
+                          ------------
+Total (root+branch&cut) =   62.80 sec. (70466.97 ticks)
+MIQCP status(113): aborted
+Cplex Time: 62.80sec (det. 70466.97 ticks)
+Returning a primal only solution to GAMS (marginals all set to NA).
+
+Problem aborted.
+
+MIP Solution:        14679.640000    (162144 iterations, 9269 nodes)
+Best possible:       14690.404265
+Absolute gap:           10.764265
+Relative gap:            0.000733
+
+Terminate batch job (Y/N)? 
+--- Restarting execution
+--- 33Bus_EREDES.gms(316) 3 Mb
+--- Reading solution for model Main_L
+--- 33Bus_EREDES.gms(316) 5 Mb
+--- Executing after solve: elapsed 0:01:04.695
+--- 33Bus_EREDES.gms(399) 6 Mb
+
+GDXXRW           24.1.2 r40979 Released Jun 16, 2013 VS8 x86/MS Windows       
+Input file : C:\Users\Utilizador\Desktop\Diss\Simulations\33B_Simulations\33Bus_EREDES\Results_Best_Scenario.gdx
+Output file: C:\Users\Utilizador\Desktop\Diss\Simulations\33B_Simulations\33Bus_EREDES\Results_Best.xlsx
+Adding new sheet: DR_Status
+Adding new sheet: DR_Used
+Adding new sheet: DR_Gamma
+Adding new sheet: DR_Total
+Adding new sheet: RestoredLoads
+Adding new sheet: Table_OpenedSW
+Adding new sheet: NodesInComponent
+Adding new sheet: EVAL
+Adding new sheet: MapNN_Export
+Adding new sheet: Gen
+Total time = 2891 Ms
+*** Status: Normal completion
+--- Job 33Bus_EREDES.gms Stop 10/11/09 23:51:11 elapsed 0:01:07.660

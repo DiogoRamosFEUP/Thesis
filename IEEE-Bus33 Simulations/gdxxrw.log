@@ -1,0 +1,24 @@
+GDXXRW           24.1.2 r40979 Released Jun 16, 2013 VS8 x86/MS Windows       
+Excel version 16.0
+Input file : C:\Users\Utilizador\Desktop\Diss\Simulations\33B_Simulations\33Bus_EREDES\SimData.xlsx
+Output file: C:\Users\Utilizador\Desktop\Diss\Simulations\33B_Simulations\33Bus_EREDES\SimData.gdx
+Type Symbol       Dim     Sheet                Data          RowHeader     ColHeader     
+Loading sheet Transmission
+Reading data from Excel: Width = 23  Height = 41
+Par  NodeData       2     Transmission         K2:R34        J2:J34        K1:R1         
+Par  LineData       2     Transmission         B2:H38        A2:A38        B1:H1         
+Loading sheet Generation
+Reading data from Excel: Width = 19  Height = 41
+Par  DGData         2     Generation           B2:L6         A2:A6         B1:L1         
+Loading sheet Reactive
+Reading data from Excel: Width = 25  Height = 37
+Par  ReactivePower   2     Reactive             B2:Y34        A2:A34        B1:Y1         
+Loading sheet Active
+Reading data from Excel: Width = 25  Height = 37
+Par  ActivePower    2     Active               B2:Y34        A2:A34        B1:Y1         
+Par  Renewabels     2     Generation           B15:E38       A15:A38       B14:E14       
+Par  DR_Priority_Factor   2     Generation           L9:L12        K9:K12        L8:L8         
+Loading sheet Status
+Reading data from Excel: Width = 6  Height = 39
+Par  StatusScenarios   2     Status               B2:F38        A2:A38        B1:F1         
+Total time = 1485 Ms
