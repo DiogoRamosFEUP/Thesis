@@ -1,0 +1,22 @@
+execute_unload 'Results_Best_Scenario.gdx';
+$onecho > ResultData_Best.txt
+Par=Best_TableBus_L Rng=Linear_OPF!A1
+Par=Best_TableLine_L Rng=Linear_OPF!G1
+Par=Best_LossOld Rng=Linear_OPF!P1
+Par=Best_Func Rng=Linear_OPF!Q1
+Par=Best_TableDR_Status Rng=DR_Status!A1
+Par=Best_TableDR_Used Rng=DR_Used!A1
+Par=Best_TableDR_Gamma Rng=DR_Gamma!A1
+Par=Best_TableDR_Total Rng=DR_Total!A1
+Par=TableRestoredLoads Rng=RestoredLoads!A1
+Par=Table_OpenedSW       Rng=Table_OpenedSW!A1
+Par=Export_nodesInComponent Rng=NodesInComponent!A1
+Par=Table_slkCount          Rng=Table_slkCount!A1
+Par=Table_Master            Rng=Table_Master!A1
+Par=Table_hasSLK            Rng=Table_hasSLK!A1
+Par=ENSval Rng=EVAL!S1
+Par=Table_MapNN Rng=MapNN_Export!A1
+Par=Best_TableGen_P Rng=Gen!A1
+
+$offecho
+Execute 'gdxxrw Results_Best_Scenario.gdx O=Results_Best.xlsx epsout=0 @ResultData_Best.txt';
