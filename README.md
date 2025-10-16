@@ -1,3 +1,7 @@
-In this Repository you can find the files created for a Master's Thesis, as well as the figures and high quality pdfs.
+|########################| FEUP'S REPOSITORY |########################|
 
-The master's PDF will become available under FEUP's sigarra.
+CONTENTS:
+1 - Files created for the thesis
+2 - Matlab .fig files customizable 
+
+################################| END |###############################|
