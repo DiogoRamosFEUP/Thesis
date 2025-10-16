@@ -1,0 +1,168 @@
+
+--- Job 33Bus_Modified.gms Start 10/14/09 11:01:55 24.1.2 r40979 WEX-WEI x86_64/MS Windows
+GAMS 24.1.2   Copyright (C) 1987-2013 GAMS Development. All rights reserved
+Licensee: EWEPA 2015 Eval License                        S150430/0001AO-GEN
+          The 14th European Workshop on Efficiency and Productivity DC11746
+          License for teaching and research at degree granting institutions
+--- Starting compilation
+--- 33Bus_Modified.gms(30) 3 Mb
+--- call gdxxrw SimData.xlsx log=gdxxrw.log trace=3 squeeze='N' @SimData.txt
+--- 33Bus_Modified.gms(31) 3 Mb
+--- GDXin=C:\Users\Utilizador\Desktop\Simulations\33B_Simulations\33Bus_EREDES_ESS\SimData.gdx
+--- 33Bus_Modified.gms(173) 3 Mb
+--- .Equations.gms(72) 3 Mb
+--- 33Bus_Modified.gms(185) 3 Mb
+--- .IslandSearch.gms(90) 3 Mb
+--- 33Bus_Modified.gms(222) 3 Mb
+--- .Store.gms(14) 3 Mb
+--- 33Bus_Modified.gms(222) 3 Mb
+--- Starting execution: elapsed 0:00:01.933
+--- 33Bus_Modified.gms(345) 4 Mb
+--- Generating MIQCP model Main_L
+--- 33Bus_Modified.gms(349) 12 Mb
+---   25,492 rows  14,246 columns  69,523 non-zeroes
+---   25,704 nl-code  3,792 nl-non-zeroes
+---   3,773 discrete-columns
+--- 33Bus_Modified.gms(349) 10 Mb
+--- Executing CPLEX: elapsed 0:00:02.037
+
+IBM ILOG CPLEX   24.1.2 r40979 Released Jun 16, 2013 WEI x86_64/MS Windows    
+--- GAMS/Cplex licensed for continuous and discrete problems.
+Cplex 12.5.1.0
+
+Reading data...
+Starting Cplex...
+Tried aggregator 6 times.
+MIQCP Presolve eliminated 13613 rows and 5508 columns.
+MIQCP Presolve modified 864 coefficients.
+Aggregator did 7104 substitutions.
+Reduced MIQCP has 11278 rows, 9818 columns, and 31405 nonzeros.
+Reduced MIQCP has 965 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 1488 quadratic constraints.
+Presolve time = 0.14 sec. (69.91 ticks)
+Probing fixed 0 vars, tightened 3564 bounds.
+Probing changed sense of 72 constraints.
+Probing time = 0.05 sec. (17.59 ticks)
+Cover probing fixed 0 vars, tightened 399 bounds.
+Clique table members: 793.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Tried aggregator 1 time.
+LP Presolve eliminated 4846 rows and 4490 columns.
+Aggregator did 458 substitutions.
+Reduced LP has 5974 rows, 4870 columns, and 20873 nonzeros.
+Presolve time = 0.02 sec. (6.89 ticks)
+
+Iteration log . . .
+Iteration:     1   Dual objective     =         15405.600000
+Perturbation started.
+Iteration:   101   Dual objective     =         15405.600000
+Iteration:   405   Dual objective     =         15405.598434
+Iteration:   681   Dual objective     =         15405.596872
+Iteration:   961   Dual objective     =         15405.595456
+Iteration:  1231   Dual objective     =         15405.594511
+Iteration:  1450   Dual objective     =         15405.593975
+Iteration:  1641   Dual objective     =         15398.898279
+Iteration:  1790   Dual objective     =         15392.506604
+Iteration:  1997   Dual objective     =         15386.482997
+Iteration:  2173   Dual objective     =         15354.923279
+Iteration:  2374   Dual objective     =         15260.885956
+Iteration:  2516   Dual objective     =         15260.178022
+Iteration:  2644   Dual objective     =         15258.574806
+Iteration:  2828   Dual objective     =         15241.156812
+Iteration:  2994   Dual objective     =         15208.959669
+Removing perturbation.
+Initializing dual steep norms . . .
+Root relaxation solution time = 0.22 sec. (163.55 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    15180.1231     0                  15405.6000     3125         
+      0     0    15180.1116    11                  Cone: 1252     3650         
+      0     0    15174.9700    11                  Cone: 2540     5299         
+      0     0    15171.9403    63                  Cone: 3854     6579         
+      0     0    15170.6437    73                  Cone: 5154     7557         
+      0     0    15170.3585    83                  Cone: 6420     8514         
+      0     0    15170.2652    68                  Cone: 7562     9273         
+      0     0    15170.2316    68                  Cone: 8410     9914         
+      0     0    15170.2198    68                  Cone: 8873    10250         
+      0     0    15170.2143    68                  Cone: 9113    10455         
+      0     0    15170.2120    68                  Cone: 9253    10589         
+      0     0    15170.2111    68                  Cone: 9351    10667         
+      0     0    15170.2110    68                  Cone: 9419    10713         
+      0     0    15170.2110    68                  Cone: 9460    10753         
+      0     0    15170.2109    68                  Cone: 9506    10796         
+      0     0    15170.2109    68                  Cone: 9531    10827         
+      0     0    15170.2109    68                  Cone: 9537    10830         
+      0     0    15170.2109    68                  Cone: 9539    10842         
+      0     0    15170.2109    68                  Cone: 9553    10860         
+      0     0    15170.2109    68                  Cone: 9558    10867         
+      0     0    15170.2109    68                  15170.2109    10867         
+*     0+    0                         5040.2400    15170.2109    10867  200.98%
+Found incumbent of value 5040.240000 after 5.80 sec. (5753.51 ticks)
+      0     2    15170.2109    68     5040.2400    15169.5864    10867  200.97%
+Elapsed time = 6.55 sec. (6700.61 ticks, tree = 0.00 MB, solutions = 1)
+      1     3    15168.3336    67     5040.2400    15168.2588    10880  200.94%
+      3     5    15167.5838    14     5040.2400    15167.8008    11967  200.93%
+     10    12    15164.6406    11     5040.2400    15167.8008    12146  200.93%
+                                                   Cone: 1024                  
+     15    17    15164.1256     8     5040.2400    15167.8008    12191  200.93%
+     20    22    15162.1975     8     5040.2400    15167.8008    12282  200.93%
+     26    28    15162.0918    11     5040.2400    15167.8008    12327  200.93%
+     30    32    15161.8217     6     5040.2400    15167.8008    12439  200.93%
+     36    38    15162.0672     8     5040.2400    15167.8008    12465  200.93%
+     39    41    15162.0663     8     5040.2400    15167.8008    12469  200.93%
+*    40+   27                        15161.9700    15167.8008    12470    0.04%
+Found incumbent of value 15161.970000 after 12.55 sec. (13024.10 ticks)
+     40    29    15162.0576     8    15161.9700    15167.8008    12470    0.04%
+                                                   Cone: 1850                  
+Elapsed time = 12.61 sec. (13090.20 ticks, tree = 0.90 MB, solutions = 2)
+     61    38    15161.9883     1    15161.9700    15167.8008    13469    0.04%
+     80    43    15165.5312    11    15161.9700    15166.3955    15075    0.03%
+                                                  Impl Bds: 1                  
+Sending CtrlC signal
+    103    60    15164.7020    12    15161.9700    15166.2369    17804    0.03%
+                                                    Covers: 1                  
+
+Cover cuts applied:  1
+Implied bound cuts applied:  1
+
+Root node processing (before b&c):
+  Real time             =    6.53 sec. (6692.77 ticks)
+Sequential b&c:
+  Real time             =    9.56 sec. (9514.00 ticks)
+                          ------------
+Total (root+branch&cut) =   16.09 sec. (16206.77 ticks)
+MIQCP status(113): aborted
+Cplex Time: 16.09sec (det. 16206.77 ticks)
+Returning a primal only solution to GAMS (marginals all set to NA).
+
+Problem aborted.
+
+MIP Solution:        15161.970000    (17930 iterations, 108 nodes)
+Best possible:       15166.236919
+Absolute gap:            4.266919
+Relative gap:            0.000281
+
+Terminate batch job (Y/N)? 
+--- Restarting execution
+--- 33Bus_Modified.gms(349) 3 Mb
+--- Reading solution for model Main_L
+--- 33Bus_Modified.gms(349) 5 Mb
+--- Executing after solve: elapsed 0:00:18.414
+--- 33Bus_Modified.gms(398) 6 Mb
+
+GDXXRW           24.1.2 r40979 Released Jun 16, 2013 VS8 x86/MS Windows       
+Input file : C:\Users\Utilizador\Desktop\Simulations\33B_Simulations\33Bus_EREDES_ESS\Results_Best_Scenario.gdx
+Output file: C:\Users\Utilizador\Desktop\Simulations\33B_Simulations\33Bus_EREDES_ESS\Results_Best_ESS.xlsx
+Adding new sheet: DR_Status
+Adding new sheet: DR_Used
+Adding new sheet: DR_Gamma
+Adding new sheet: DR_Total
+Adding new sheet: RestoredLoads
+Adding new sheet: Storage
+Total time = 2281 Ms
+*** Status: Normal completion
+--- Job 33Bus_Modified.gms Stop 10/14/09 11:02:16 elapsed 0:00:20.775
